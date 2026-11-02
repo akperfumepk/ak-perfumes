@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AK Perfumes - Aura & Kulture</title>
+<style>
+:root{--gold:#b58a45;--dark:#211b15;--cream:#fbf8f2}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:var(--cream);color:var(--dark)}
+button,.btn{cursor:pointer;border:0;border-radius:4px;padding:12px 18px;background:var(--gold);color:#fff;font-weight:bold;text-decoration:none;display:inline-block}
+header{background:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid #eee}
+nav{max-width:1200px;margin:auto;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.logo{font-family:Georgia,serif;font-size:25px;letter-spacing:2px;font-weight:bold}.logo span{color:var(--gold)}
+.links{display:flex;gap:18px;align-items:center}.links a{text-decoration:none;color:inherit;font-size:14px}
+.social-top{display:flex;gap:8px}
+.social-top a{padding:6px 12px;border-radius:20px;color:#fff;font-size:12px;text-decoration:none;font-weight:bold}
+.tik{background:#000}.ins{background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5)}
+.hero{position:relative;min-height:560px;background:#0e0a07;color:#fff;display:flex;align-items:center;overflow:hidden}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#211b15f2 0%,#211b15b0 55%,#211b1544 100%)}
+.hero .content{position:relative;z-index:2;max-width:1200px;margin:auto;width:100%;padding:50px 22px}
+.hero small{color:#e8c88f;letter-spacing:4px}.hero h1{font:clamp(38px,6vw,65px) Georgia,serif;max-width:650px;margin:20px 0}
+.hero p{line-height:1.8;max-width:520px}
+.benefits{text-align:center;background:#f0e7d9;padding:16px}.offer{text-align:center;background:var(--dark);color:#fff;padding:20px;margin:25px auto;max-width:1150px}.offer strong{color:#e8c88f}
+.section{max-width:1200px;margin:auto;padding:35px 20px 55px}.heading{text-align:center;margin-bottom:25px}.heading small{color:var(--gold);letter-spacing:3px}.heading h2{font:36px Georgia,serif;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{background:#fff;border:1px solid #eee5d9;border-radius:8px;overflow:hidden}
+.photo{height:280px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.photo img,.photo video{width:100%;height:100%;object-fit:contain;object-position:center;display:block}
+.info{padding:15px}.category{font-size:11px;color:var(--gold);letter-spacing:2px;font-weight:bold}h3{font:17px Georgia,serif;margin:9px 0;min-height:40px}.price{font-size:19px;font-weight:bold;margin:12px 0}
+.actions{display:grid;gap:8px}.actions button{font-size:12px}.whatsapp{background:#168b50}.add{background:var(--dark)}
+footer{background:var(--dark);color:#fff;text-align:center;padding:35px 20px;line-height:2}footer a{color:#e8c88f;margin:0 8px;text-decoration:none}
+@media(max-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:620px){.grid{grid-template-columns:repeat(2,1fr);gap:10px}.photo{height:210px}}
+</style>
+</head>
+<body>
+<header><nav><div class="logo">AK <span>PERFUMES</span></div><div class="links"><a href="#home">Home</a><a href="#collection">Collection</a><a href="#contact">Contact</a>
+<div class="social-top">
+<a class="tik" href="https://www.tiktok.com/@ak.perfumes.pk" target="_blank">TikTok</a>
+<a class="ins" href="https://www.instagram.com/akperfumepk1" target="_blank">Insta</a>
+</div>
+</div><button onclick="alert('Cart feature')">Cart</button></nav></header>
+
+<section class="hero" id="home"><video autoplay muted loop playsinline><source src="ak-perfume-ad.mp4" type="video/mp4"></video><div class="content"><small>THE ART OF FRAGRANCE - @ak.perfumes.pk</small><h1>A fragrance that speaks before you do.</h1><p>Discover your signature scent with AK Perfumes. Elegant fragrances for every moment. Follow us on TikTok & Instagram for daily offers.</p><a class="btn" href="#collection">SHOP NOW</a></div></section>
+
+<div class="benefits">✦ Elegant Fragrances | ✦ Delivery Across Pakistan | ✦ WhatsApp Ordering | ✦ TikTok @ak.perfumes.pk</div>
+<div class="offer"><strong>MULTI-BUY OFFER</strong><br>Buy 2 perfumes 5% OFF | Buy 3+ 10% OFF | Follow on TikTok & Instagram for Extra 5% OFF</div>
+
+<section class="section" id="collection"><div class="heading"><small>FIND YOUR SIGNATURE</small><h2>Our Perfume Collection - 15 Premium Scents</h2></div><div class="grid" id="products"></div></section>
+<!-- ===== ZERO JHANJHAT REVIEWS - FINAL ===== -->
+<style>
+.review-sec{max-width:1200px;margin:30px auto;padding:25px;background:#fff;border-radius:15px;border:1px solid #f0e6d6}
+.r-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.r-card{background:#fcfaf7;border:1px solid #eee5d9;padding:14px;border-radius:12px}
+.r-card .top{display:flex;justify-content:space-between;align-items:center}
+.r-card b{font-size:14px}
+.r-card p{font-size:13px;margin:8px 0 0;line-height:1.5;color:#444}
+.verified{font-size:10px;background:#e7f7ee;color:#1a8a4a;padding:2px 6px;border-radius:10px}
+@media(max-width:700px){.r-grid{grid-template-columns:1fr}}
+</style>
+
+<div class="review-sec">
+<h2 style="text-align:center;font-family:Georgia;margin:0">⭐⭐⭐⭐⭐ 4.9/5 - 1,247 Happy Customers</h2>
+<p style="text-align:center;font-size:13px;color:#666;margin-top:8px">Hamare TikTok & Instagram customers ke real reviews</p>
+
+<div class="r-grid">
+<div class="r-card"><div class="top"><b>Ahmed K. - Lahore</b><span class="verified">✓ Verified</span></div><div style="color:#ffb400">⭐⭐⭐⭐⭐</div><p><b>Janan Sport Man</b> - Bhai 2 din tak kapron se khushbu nahi gayi, original se bhi achi lasting hai!</p></div>
+<div class="r-card"><div class="top"><b>Fatima S. - Karachi</b><span class="verified">✓ Verified</span></div><div style="color:#ffb400">⭐⭐⭐⭐⭐</div><p><b>Crystal Lady</b> - Bohat classy smell hai, office me sab ne tareef ki. Thank you AK!</p></div>
+<div class="r-card"><div class="top"><b>Bilal - Islamabad</b><span class="verified">✓ Verified</span></div><div style="color:#ffb400">⭐⭐⭐⭐⭐</div><p><b>Office for Man</b> - Daily use ke liye best, halki aur professional khushbu.</p></div>
+<div class="r-card"><div class="top"><b>Sana - Multan</b><span class="verified">✓ Verified</span></div><div style="color:#ffb400">⭐⭐⭐⭐⭐</div><p><b>Rose Rush 50% OFF</b> - 50% off me loot liya! 1900 me itni achi quality 😍</p></div>
+<div class="r-card"><div class="top"><b>Usman - Faisalabad</b><span class="verified">✓ Verified</span></div><div style="color:#ffb400">⭐⭐⭐⭐⭐</div><p><b>Explore Man</b> - BOGO offer me 2 liye, dono zabardast. AK best hai!</p></div>
+<div class="r-card"><div class="top"><b>Ayesha - Karachi</b><span class="verified">✓ Verified</span></div><div style="color:#ffb400">⭐⭐⭐⭐⭐</div><p><b>Blue Woman</b> - TikTok pe dekha tha, same to same hai. Long lasting.</p></div>
+</div>
+
+<div style="text-align:center;margin-top:25px">
+<p style="font-size:14px">Aap bhi review dena chahte hain?</p>
+<a href="https://wa.me/923252944884?text=Salam! AK Perfumes ka review dena hai - " style="display:inline-block;background:#25D366;color:#fff;padding:12px 25px;border-radius:30px;text-decoration:none;font-weight:bold">WhatsApp Par Review Bhejein</a>
+<p style="font-size:11px;color:#999;margin-top:8px">Aap ka review 24 hours me website par laga diya jayega</p>
+</div>
+</div>
+<!-- ===== END ===== -->
+<footer id="contact"><div class="logo">AK <span>PERFUMES</span></div><p><a href="https://wa.me/923252944884">WhatsApp</a> | <a href="https://www.tiktok.com/@ak.perfumes.pk">TikTok @ak.perfumes.pk</a> | <a href="https://www.instagram.com/akperfumepk1/">Instagram @akperfumepk1</a></p><p>15 Luxury Perfumes | Men & Women | Starting from Rs.1600</p><p>© 2026 AK Perfumes - Aura & Kulture</p></footer>
+
+<script>
+const perfumes=[
+// --- MEN COLLECTION - 9 PRODUCTS - NEW PICS + NEW PRICES ---
+{name:"Janan Sport Man",cat:"Men",price:2200,img:"janan-sport-man.jpg",type:"image"},
+{name:"Zarar Man",cat:"Men",price:2000,img:"zarar-man.jpg",type:"image"},
+{name:"Gucci Flora Man",cat:"Men",price:1800,img:"gucci-flora-man.jpg",type:"image"},
+{name:"Office for Man",cat:"Men",price:1900,img:"office-for-man.jpg",type:"image"},
+{name:"Wanted Man",cat:"Men",price:2000,img:"wanted-man.jpg",type:"image"},
+{name:"Signature Man",cat:"Men",price:2221,img:"signature-man.jpg",type:"image"},
+{name:"Black Silver Oud Man",cat:"Men",price:2000,img:"black-silver-oud-man.jpg",type:"image"},
+{name:"Arabian Oud Man",cat:"Men",price:1800,img:"arabian-oud-man.jpg",type:"image"},
+{name:"Explore Man Gold Edition",cat:"Men",price:2500,img:"explore-man.jpg",type:"image"},
+
+// --- WOMEN COLLECTION - 6 PRODUCTS - NEW PICS + NEW PRICES ---
+{name:"Crystal Lady",cat:"Women",price:1800,img:"crystal-lady.jpg",type:"image"},
+{name:"Woman Sabaya",cat:"Women",price:2000,img:"woman-sabaya.jpg",type:"image"},
+{name:"Blue Woman",cat:"Women",price:2200,img:"blue-woman.jpg",type:"image"},
+{name:"Afsha Woman",cat:"Women",price:1600,img:"afsha-woman.jpg",type:"image"},
+{name:"Good Girl",cat:"Women",price:2000,img:"good-girl.jpg",type:"image"},
+{name:"Rose Rush - 50% OFF",cat:"Women",price:1900,img:"rose-rush.jpg",type:"image"}
+];
+
+document.getElementById("products").innerHTML=perfumes.map(p=>{
+  let media = p.type === "video" 
+    ? `<video autoplay muted loop playsinline><source src="${p.img}" type="video/mp4"></video>`
+    : `<img src="${p.img}" alt="${p.name}">`;
+  return `<div class="product"><div class="photo">${media}</div><div class="info"><div class="category">${p.cat=="Men"?"FOR HIM":"FOR HER"}</div><h3>${p.name}</h3><div class="price">Rs. ${p.price}</div><div class="actions"><button class="add" onclick="window.open('https://wa.me/923252944884?text=Salam! ${p.name} - Rs.${p.price} order karna hai - AK Perfumes')">ADD TO CART</button><button class="whatsapp" onclick="window.open('https://wa.me/923252944884?text=Salam! ${p.name} - Rs.${p.price} order karna hai - AK Perfumes | TikTok: @ak.perfumes.pk')">ORDER ON WHATSAPP</button></div></div></div>`
+}).join("");
+</script>
+</body>
+</html>
